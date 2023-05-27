@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three Cards Example</title>
+  <style>
+    .card body{
+        background-color: rgb(134, 194, 244);
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: calc(25% - 20px);
+      margin-bottom: 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .card p {
+      margin-bottom: 0;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: lighter;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    
+
+  </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 10px;">Mentors</h1>
+  <div class="card-container">
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 1">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 2">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 3">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <br>
+  <div class="card-container">
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 1">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 2">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+    <div class="card">
+      <img src="gettyimages-1229892983-square.jpg" alt="Card Image 3">
+      <p>Some quick example text to build on the card <br>title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</body>
+</html>

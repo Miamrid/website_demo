@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build.myweb</title>
+  <style>
+    .navbar {
+      background-color: #cbd6ef;
+      padding: 10px 20px;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar-logo img {
+      height: 40px;
+    }
+
+    .navbar-menu {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar-item a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+      .navbar-container {
+        flex-wrap: wrap;
+      }
+
+      .navbar-logo {
+        margin-bottom: 10px;
+      }
+
+      .navbar-menu {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-logo" href="#">
+        <img src="buildlogo.png" alt="Build.myweb Logo">
+      </a>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a href="#">Home</a></li>
+        <li class="navbar-item"><a href="#">Mentors</a></li>
+        <li class="navbar-item"><a href="#">Participate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Rest of your webpage content here -->
+
+</body>
+</html>

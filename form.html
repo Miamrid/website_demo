@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    .form-box {
+    width: 504px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f0f0;
+    height: 700px;
+    
+}
+
+    .form-box h2 {
+      text-align: center;
+    }
+
+    .form-box h1{
+        text-align: center;
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+    
+    .form-box p{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="email"],
+    .form-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form-box button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-box select[name="yesno"] {
+    width:fit-content;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+  }
+    
+
+
+
+    .form-box button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Form:</h2>
+    <form>
+        <h1>Name</h1>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <h1>Mobile number</h1>
+      <input type="text" name="tel" placeholder="Your Mobile Number" required >
+      <h1>Email address</h1>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <h1>Company / instituion name</h1>
+      <input type="text" name="name" placeholder="Your company / institution name">
+      <br>
+      <br>
+      <p>Upload a short video or image of hand written sheet showing your interest to join build.myweb</p>
+      <input type="file">
+      <br>
+      <select style="margin: 35px;" name="yesno">
+        <option value="Have you attended any events by Pygrammers before!?">Have you attended any events by Pygrammers before!?</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
